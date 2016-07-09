@@ -4,9 +4,20 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "pug": "^2.0.0-beta3"
+    "chart.js": "^2.1.6",
+    "express": "^4.14.0",
+    "mysql": "^2.11.1",
+    "pug": "^2.0.0-beta3",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "spectre.css": "^0.1.25"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
   "scripts": {
     "serve": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
