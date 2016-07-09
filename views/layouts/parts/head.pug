@@ -1,4 +1,10 @@
+block frontmatter
 doctype html
 head
 	title= pagetitle ? pagetitle : 'Supply Watch'
+	each file in app.libraries
+		if (!app.prod)
+			script(src=`${file}.js` type="text/javascript")
+		else
+			script(src=`${file}.min.js` type="text/javascript")
 body
