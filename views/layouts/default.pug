@@ -1,4 +1,17 @@
 include parts/head
-include parts/header
-block content
-include parts/footer
+.columns
+	.column.col-1
+	.column.col-8
+		include parts/header
+	.column.col-3
+.columns
+	.column.col-1
+	.column.col-8
+		block content
+	.column.col-3
+		block sidebar
+.columns
+	.column.col-1
+	.column.col-8
+		include parts/footer
+	.column.col-3

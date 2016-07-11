@@ -2,9 +2,10 @@ block frontmatter
 doctype html
 head
 	title= pagetitle ? pagetitle : 'Supply Watch'
+	link(href="/assets/css/main.css" rel="stylesheet")
 	each file in app.libraries
 		if (!app.prod)
-			script(src=`${file}.js` type="text/javascript")
+			script(src=`/assets/js/lib/${file}.js` type="text/javascript")
 		else
-			script(src=`${file}.min.js` type="text/javascript")
+			script(src=`/assets/js/lib/${file}.min.js` type="text/javascript")
 body
